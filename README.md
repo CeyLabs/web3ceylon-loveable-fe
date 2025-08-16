@@ -27,4 +27,8 @@ Development is guided by the community. If you have ideas or improvements:
 2. Run `npm run lint` to ensure code quality.
 3. Commit your changes and open a pull request describing your contribution.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. © 2024 Ceylon Cash PVT LTD and CeyLabs LLC.
+
 Join discussions and discover open tasks on the project's issue tracker. Everyone is welcome to participate and help grow the Sri Lankan Web3 ecosystem.

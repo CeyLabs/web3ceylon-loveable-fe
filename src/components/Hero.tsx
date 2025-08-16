@@ -34,9 +34,9 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
               Powered by Ceylon Cash × Bybit
             </p>
             <div className="mt-8">
-              <a 
-                href="#register" 
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-blue-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              <a
+                href="https://lu.ma/CeyCashEvents"
+                className="inline-flex items-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 👉 Apply for Whitelist
               </a>

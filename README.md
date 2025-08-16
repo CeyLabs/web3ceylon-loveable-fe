@@ -70,4 +70,4 @@ We don't support custom domains (yet). If you want to deploy your project under 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. © 2024 Ceylon Cash PVT LTD and CeyLabs LLC.

@@ -1,73 +1,34 @@
-# Welcome to your Lovable project
+# Web3Ceylon Web Frontend
 
-## Project info
+## Project Overview
+Web3Ceylon is a community-driven CSR initiative that empowers Sri Lankan developers to explore and build with Web3 technologies. The project is fully open source and relies on collaborative contributions to create inclusive tools, learning resources, and digital solutions for local communities.
 
-**URL**: https://lovable.dev/projects/f34e3a91-e821-4705-9e65-257dcf59254e
+## Web3Ceylon – Sri Lanka's first multi-city dev-focused tour
+Web3Ceylon organizes the country's first multi-city tour dedicated to developers. The tour connects builders across Sri Lanka and shares practical knowledge about blockchain and decentralized tech.
 
-## How can I edit this code?
+- **Purpose:** Introduce Web3 concepts, showcase real-world use cases, and spark community-led projects.
+- **Participating cities:** Colombo, Kandy, Galle, and Jaffna.
+- **Get involved:** Attend a meetup, propose a talk, volunteer as an organizer, or help sponsor a stop on the tour.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/f34e3a91-e821-4705-9e65-257dcf59254e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Getting Started
+To run the project locally you need Node.js (>=18) and npm (>=9) installed. Using a version manager like nvm is recommended.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone https://github.com/CeyLabs/Web3Ceylon-Web-FE.git
+cd Web3Ceylon-Web-FE
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
+Development is guided by the community. If you have ideas or improvements:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f34e3a91-e821-4705-9e65-257dcf59254e) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. Fork this repository and create a new branch for your feature or fix.
+2. Run `npm run lint` to ensure code quality.
+3. Commit your changes and open a pull request describing your contribution.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. © 2024 Ceylon Cash PVT LTD and CeyLabs LLC.
+
+Join discussions and discover open tasks on the project's issue tracker. Everyone is welcome to participate and help grow the Sri Lankan Web3 ecosystem.

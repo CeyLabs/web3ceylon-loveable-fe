@@ -3,6 +3,13 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import FadeIn from './animations/FadeIn';
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 interface RegistrationProps {
   className?: string;
@@ -34,37 +41,39 @@ const Registration: React.FC<RegistrationProps> = ({ className }) => {
                 </p>
               </div>
               
-              {/* Lu.ma embed placeholder */}
               <div className="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto">
                 <div className="text-center">
                   <div className="text-4xl mb-4">📝</div>
-                  <h4 className="text-lg font-semibold mb-4">Lu.ma Registration Form</h4>
+                  <h4 className="text-lg font-semibold mb-4">Whitelist Registration Form</h4>
                   <p className="text-sm text-gray-600 mb-6">
-                    This will be replaced with actual Lu.ma embed
+                    Complete the form below to join the whitelist
                   </p>
-                  
-                  {/* Placeholder form */}
+
                   <form className="space-y-4">
-                    <input 
-                      type="text" 
-                      placeholder="Full Name" 
+                    <input
+                      type="text"
+                      placeholder="Full Name"
                       className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <input 
-                      type="email" 
-                      placeholder="Email Address" 
+                    <input
+                      type="email"
+                      placeholder="Email Address"
                       className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <select className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                      <option>Select Preferred Cities</option>
-                      <option>All Cities (Full Tour)</option>
-                      <option>Colombo Only</option>
-                      <option>Kandy Only</option>
-                      <option>Galle Only</option>
-                      <option>Ella Only</option>
-                    </select>
-                    <button 
-                      type="submit" 
+                    <Select defaultValue="all">
+                      <SelectTrigger className="w-full p-3 border border-gray-200 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <SelectValue placeholder="Select Preferred Cities" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All Cities (Full Tour)</SelectItem>
+                        <SelectItem value="colombo">Colombo Only</SelectItem>
+                        <SelectItem value="kandy">Kandy Only</SelectItem>
+                        <SelectItem value="galle">Galle Only</SelectItem>
+                        <SelectItem value="ella">Ella Only</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <button
+                      type="submit"
                       className="w-full bg-gradient-to-r from-orange-500 to-blue-600 text-white font-semibold py-3 rounded-lg hover:from-orange-600 hover:to-blue-700 transition-all duration-300"
                     >
                       Join Whitelist

@@ -35,7 +35,14 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
             </p>
             <div className="mt-8">
               <a
-                href="https://lu.ma/CeyCashEvents"
+                href="#register"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.getElementById('register');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="inline-flex items-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 👉 Apply for Whitelist

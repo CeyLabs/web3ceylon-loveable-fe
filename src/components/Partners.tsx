@@ -11,40 +11,10 @@ interface PartnersProps {
 const Partners: React.FC<PartnersProps> = ({ className }) => {
   const partners = [
     {
-      name: "Bybit",
-      type: "Headline Partner",
-      description: "Leading global cryptocurrency exchange",
-      logo: "🟡"
-    },
-    {
-      name: "Ceylon Cash",
-      type: "Organizing Partner",
-      description: "Sri Lanka's premier Web3 payment platform",
-      logo: "💳"
-    },
-    {
-      name: "University of Colombo",
-      type: "Academic Partner",
-      description: "Premier academic institution for blockchain research",
-      logo: "🎓"
-    },
-    {
-      name: "Trace Network",
-      type: "Technology Partner",
-      description: "Blockchain infrastructure and development",
-      logo: "🔗"
-    },
-    {
-      name: "Tech Startups Lanka",
-      type: "Community Partner",
-      description: "Sri Lanka's largest startup community",
-      logo: "🚀"
-    },
-    {
-      name: "Digital Artists Collective",
-      type: "Creative Partner",
-      description: "Supporting Sri Lankan digital creators",
-      logo: "🎨"
+      name: "Your Logo Here",
+      type: "Partner Placement Available",
+      description: "You can be here as a partner",
+      logo: "🤝"
     }
   ];
 
@@ -57,7 +27,7 @@ const Partners: React.FC<PartnersProps> = ({ className }) => {
           </FadeIn>
           <FadeIn delay={100}>
             <p className="text-lg text-center text-muted-foreground mb-8">
-              Web3Ceylon is made possible through partnerships with leading organizations, educational institutions, and community groups across Sri Lanka.
+              Sponsor placements are available – your brand can be featured here as a partner.
             </p>
           </FadeIn>
         </div>

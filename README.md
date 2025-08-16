@@ -14,7 +14,7 @@ Web3Ceylon organizes the country's first multi-city tour dedicated to developers
 To run the project locally you need Node.js and npm installed.
 
 ```sh
-git clone <REPO_URL>
+git clone https://github.com/CeyLabs/Web3Ceylon-Web-FE.git
 cd Web3Ceylon-Web-FE
 npm install
 npm run dev

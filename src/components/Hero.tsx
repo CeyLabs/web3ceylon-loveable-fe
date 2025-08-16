@@ -22,17 +22,25 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn delay={200}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium tracking-tight text-white leading-tight mb-6">
-              Orangery Ventures
+              Web3Ceylon 2025
             </h1>
+            <p className="text-xl md:text-2xl text-white/95 mb-6 font-medium">
+              Sri Lanka's Largest Web3 Developer & Community Tour
+            </p>
           </FadeIn>
           
           <FadeIn delay={300}>
             <p className="text-lg md:text-xl text-white/90 mb-4">
-              We believe founders with unfair advantages & domain expertise.
+              Powered by Ceylon Cash × Bybit
             </p>
-            <p className="text-lg md:text-xl text-white/90 mb-8">
-              We back diverse teams and overlooked founders. First check, Baltic focus.
-            </p>
+            <div className="mt-8">
+              <a 
+                href="#register" 
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-blue-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                👉 Apply for Whitelist
+              </a>
+            </div>
           </FadeIn>
         </div>
       </div>

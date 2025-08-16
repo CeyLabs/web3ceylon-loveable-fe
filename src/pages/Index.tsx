@@ -2,11 +2,11 @@
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import Manifesto from '@/components/Manifesto';
-import Gap from '@/components/Gap';
-import FoundersInSearch from '@/components/FoundersInSearch';
-import InvestmentApproach from '@/components/InvestmentApproach';
-import Community from '@/components/Community';
+import Intro from '@/components/Intro';
+import Cities from '@/components/Cities';
+import Speakers from '@/components/Speakers';
+import Partners from '@/components/Partners';
+import Registration from '@/components/Community';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
 
@@ -43,12 +43,12 @@ const Index = () => {
     <main className="relative">
       <Header />
       <Hero />
-      <Manifesto />
-      <Gap />
-      <FoundersInSearch />
-      <InvestmentApproach />
+      <Intro />
+      <Cities />
+      <Speakers />
+      <Partners />
       <About />
-      <Community />
+      <Registration />
       <Footer />
     </main>
   );

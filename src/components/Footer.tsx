@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <Link to="/" className="text-xl font-serif font-medium tracking-tight">
-              Orangery Ventures
+              Web3Ceylon
             </Link>
           </div>
           
@@ -44,21 +44,27 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
               Home
             </button>
             <button
-              onClick={() => scrollToSection('thesis')} 
-              className="text-sm hover:text-orangery-500 transition-colors"
+              onClick={() => scrollToSection('cities')} 
+              className="text-sm hover:text-blue-600 transition-colors"
             >
-              Thesis
+              Cities
             </button>
             <button
-              onClick={() => scrollToSection('investment')} 
-              className="text-sm hover:text-orangery-500 transition-colors"
+              onClick={() => scrollToSection('speakers')} 
+              className="text-sm hover:text-blue-600 transition-colors"
             >
-              Investment
+              Speakers
+            </button>
+            <button
+              onClick={() => scrollToSection('register')} 
+              className="text-sm hover:text-blue-600 transition-colors"
+            >
+              Register
             </button>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Orangery Ventures. All rights reserved.
+            &copy; {new Date().getFullYear()} Web3Ceylon. Powered by Ceylon Cash × Bybit.
           </div>
         </div>
       </div>

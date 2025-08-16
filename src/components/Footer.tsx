@@ -39,7 +39,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           <div className="flex space-x-6 mb-4 md:mb-0">
             <button
               onClick={() => scrollToSection('home')} 
-              className="text-sm hover:text-orangery-500 transition-colors"
+              className="text-sm hover:text-blue-600 transition-colors"
             >
               Home
             </button>

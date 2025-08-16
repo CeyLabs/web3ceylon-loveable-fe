@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
       <div className="absolute inset-0 -z-10">
         <img 
           src="/lovable-uploads/a0278ce1-b82d-4ed6-a186-14a9503ef65c.png" 
-          alt="Orangery" 
+          alt="Sri Lanka landscape" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30"></div>

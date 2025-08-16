@@ -47,9 +47,12 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <NavLink 
-          to="/" 
-          className="text-xl font-serif font-medium tracking-tight transition-opacity hover:opacity-80"
+        <NavLink
+          to="/"
+          className={cn(
+            "text-xl font-serif font-bold tracking-tight transition-opacity hover:opacity-80",
+            isScrolled ? "text-black" : "text-white"
+          )}
         >
           Web3Ceylon
         </NavLink>

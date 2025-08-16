@@ -10,46 +10,46 @@ interface SpeakersProps {
 const Speakers: React.FC<SpeakersProps> = ({ className }) => {
   const speakers = [
     {
-      name: "Ravindu Silva",
-      title: "Co-Founder, Ceylon Cash",
-      topic: "The Future of Digital Payments in Sri Lanka",
+      name: "To be decided",
+      title: "Founder, Ceylon Cash",
+      topic: "To be announced",
       image: "👨‍💼",
-      bio: "Leading fintech innovation in South Asia"
+      bio: "Details coming soon"
     },
     {
-      name: "Priya Mendis",
-      title: "Blockchain Developer, Bybit",
-      topic: "Building Secure Smart Contracts",
+      name: "To be decided",
+      title: "CTIO, CeyLabs LLC",
+      topic: "To be announced",
       image: "👩‍💻",
-      bio: "10+ years in blockchain development"
+      bio: "Details coming soon"
     },
     {
-      name: "Kasun Fernando",
-      title: "CEO, Tech Startup Lanka",
-      topic: "From Idea to Token: Startup Journey",
+      name: "To be decided",
+      title: "CTO, Web3 Tech Startup",
+      topic: "To be announced",
       image: "🚀",
-      bio: "Serial entrepreneur and Web3 advocate"
+      bio: "Details coming soon"
     },
     {
-      name: "Dr. Nimal Perera",
-      title: "University of Colombo",
-      topic: "Blockchain in Academic Research",
+      name: "To be decided",
+      title: "Lecturer, University of Somewhere",
+      topic: "To be announced",
       image: "🎓",
-      bio: "Leading academic blockchain research"
+      bio: "Details coming soon"
     },
     {
-      name: "Amara Wickramasinghe",
+      name: "To be decided",
       title: "NFT Artist & Creator",
-      topic: "Digital Art in the Metaverse",
+      topic: "To be announced",
       image: "🎨",
-      bio: "Pioneer in Sri Lankan digital art scene"
+      bio: "Details coming soon"
     },
     {
-      name: "Sanjaya Ratnatunga",
+      name: "To be decided",
       title: "DAO Governance Expert",
-      topic: "Community-Driven Organizations",
+      topic: "To be announced",
       image: "🏛️",
-      bio: "Expert in decentralized governance"
+      bio: "Details coming soon"
     }
   ];
 

@@ -11,7 +11,7 @@ Web3Ceylon organizes the country's first multi-city tour dedicated to developers
 - **Get involved:** Attend a meetup, propose a talk, volunteer as an organizer, or help sponsor a stop on the tour.
 
 ## Getting Started
-To run the project locally you need Node.js and npm installed.
+To run the project locally you need Node.js (>=18) and npm (>=9) installed. Using a version manager like nvm is recommended.
 
 ```sh
 git clone https://github.com/CeyLabs/Web3Ceylon-Web-FE.git

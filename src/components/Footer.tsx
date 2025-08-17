@@ -64,7 +64,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           </div>
           
           <div className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Web3Ceylon. Powered by Ceylon Cash × Bybit.
+            &copy; {new Date().getFullYear()} Ceylon Cash PVT LTD. All rights reserved.
           </div>
         </div>
       </div>

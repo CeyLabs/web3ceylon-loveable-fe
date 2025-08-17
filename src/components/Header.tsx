@@ -58,7 +58,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         </NavLink>
         
         <div className="hidden md:flex items-center space-x-8">
-          <NavLinks scrollToSection={scrollToSection} />
+          <NavLinks scrollToSection={scrollToSection} isScrolled={isScrolled} />
         </div>
         
         <button 
@@ -66,13 +66,30 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={cn(
-            "block w-6 transition-all duration-300",
-            isMobileMenuOpen ? "opacity-0" : "opacity-100"
-          )}>
-            <span className="block w-6 h-0.5 bg-foreground mb-1.5" />
-            <span className="block w-6 h-0.5 bg-foreground mb-1.5" />
-            <span className="block w-4 h-0.5 bg-foreground" />
+          <span
+            className={cn(
+              "block w-6 transition-all duration-300",
+              isMobileMenuOpen ? "opacity-0" : "opacity-100"
+            )}
+          >
+            <span
+              className={cn(
+                "block w-6 h-0.5 mb-1.5",
+                isScrolled ? "bg-foreground" : "bg-white"
+              )}
+            />
+            <span
+              className={cn(
+                "block w-6 h-0.5 mb-1.5",
+                isScrolled ? "bg-foreground" : "bg-white"
+              )}
+            />
+            <span
+              className={cn(
+                "block w-4 h-0.5",
+                isScrolled ? "bg-foreground" : "bg-white"
+              )}
+            />
           </span>
         </button>
       </div>
@@ -138,30 +155,43 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
 
 interface NavLinksProps {
   scrollToSection: (id: string) => void;
+  isScrolled: boolean;
 }
 
-const NavLinks: React.FC<NavLinksProps> = ({ scrollToSection }) => (
+const NavLinks: React.FC<NavLinksProps> = ({ scrollToSection, isScrolled }) => (
   <>
-    <button 
-      className="text-sm font-medium hover:text-blue-600 transition-colors"
+    <button
+      className={cn(
+        "text-sm font-medium hover:text-blue-600 transition-colors",
+        isScrolled ? "text-black" : "text-white"
+      )}
       onClick={() => scrollToSection('home')}
     >
       Home
     </button>
-    <button 
-      className="text-sm font-medium hover:text-blue-600 transition-colors"
+    <button
+      className={cn(
+        "text-sm font-medium hover:text-blue-600 transition-colors",
+        isScrolled ? "text-black" : "text-white"
+      )}
       onClick={() => scrollToSection('cities')}
     >
       Cities
     </button>
-    <button 
-      className="text-sm font-medium hover:text-blue-600 transition-colors"
+    <button
+      className={cn(
+        "text-sm font-medium hover:text-blue-600 transition-colors",
+        isScrolled ? "text-black" : "text-white"
+      )}
       onClick={() => scrollToSection('speakers')}
     >
       Speakers
     </button>
-    <button 
-      className="text-sm font-medium hover:text-blue-600 transition-colors"
+    <button
+      className={cn(
+        "text-sm font-medium hover:text-blue-600 transition-colors",
+        isScrolled ? "text-black" : "text-white"
+      )}
       onClick={() => scrollToSection('register')}
     >
       Register

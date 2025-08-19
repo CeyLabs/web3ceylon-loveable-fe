@@ -58,6 +58,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         className={`group/navigation-menu max-w-max fixed hidden lg:flex items-center justify-between gap-8 px-5 py-2.5 left-1/2 -translate-x-1/2 top-[19px] z-50 backdrop-blur-3xl bg-white/30 rounded-2xl transition-all duration-300 ${
           isScrolled ? "bg-white/40 shadow-lg" : ""
         } ${className ?? ""}`}
+        data-header="floating"
         aria-label="Main"
       >
         <NavLink to="/" className="flex items-center gap-2">
@@ -104,6 +105,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         className={`fixed flex lg:hidden items-center justify-between w-[90vw] px-2.5 py-2 left-1/2 -translate-x-1/2 top-[19px] z-50 backdrop-blur-3xl bg-white/30 rounded-2xl ${
           isScrolled ? "shadow-lg bg-white/40" : ""
         } ${className ?? ""}`}
+        data-header="floating"
       >
         <NavLink to="/">
           <p className="text-2xl font-sans font-medium tracking-tighter text-black">

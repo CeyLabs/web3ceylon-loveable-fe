@@ -98,6 +98,14 @@
   .text-pretty {
     text-wrap: pretty;
   }
+
+  /* Shimmer/Spin animations for CTA button */
+  .animate-shimmer-slide {
+    animation: shimmer-slide var(--speed, 3s) linear infinite;
+  }
+  .animate-spin-around {
+    animation: spin-around var(--speed, 3s) linear infinite;
+  }
 }
 
 @layer components {
@@ -173,6 +181,16 @@ html.dark ::-webkit-scrollbar-thumb {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes shimmer-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes spin-around {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .no-scrollbar {

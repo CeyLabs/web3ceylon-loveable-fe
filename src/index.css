@@ -2,6 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Local fonts: Figtree (300–900, normal/italic) and Instrument Serif (400, normal/italic) */
+@layer base {
+  /* Figtree */
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-300-normal.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-300-italic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-400-normal.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-400-italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-500-normal.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-500-italic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-600-normal.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-600-italic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-700-normal.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-700-italic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-800-normal.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-800-italic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-900-normal.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/figtree-900-italic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* Instrument Serif */
+  @font-face {
+    font-family: "Instrument Serif";
+    src: url("/assets/fonts/instrument-serif-400-normal.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Instrument Serif";
+    src: url("/assets/fonts/instrument-serif-400-italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -81,16 +200,20 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
+    @apply font-serif font-normal tracking-tight;
   }
 }
 
 @layer utilities {
+  /* Font utilities to mirror Tailwind's font-<family> naming */
+  .font-figtree { font-family: "Figtree", system-ui, sans-serif; }
+  .font-instrument { font-family: "Instrument Serif", Georgia, serif; }
+
   .text-balance {
     text-wrap: balance;
   }

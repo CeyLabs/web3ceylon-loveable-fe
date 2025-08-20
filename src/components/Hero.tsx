@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <img
-          src="/lovable-uploads/a0278ce1-b82d-4ed6-a186-14a9503ef65c.png"
+          src="/assets/hero-cover.webp"
           alt="Sri Lanka landscape"
           className="w-full h-full object-cover"
         />
@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
                       "--radius": "90px",
                       "--speed": "3s",
                       "--cut": "0.05em",
-                      "--bg": "#f97316",
+                      "--bg": "#000000",
                     };
                     return (
                       <a

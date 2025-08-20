@@ -1,5 +1,6 @@
 
 import type { Config } from "tailwindcss";
+import animatePlugin from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -20,8 +21,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
-				serif: ['GT Sectra', 'Georgia', 'serif'],
+				sans: ['Figtree', 'SF Pro Display', 'system-ui', 'sans-serif'],
+				serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+				figtree: ['Figtree', 'system-ui', 'sans-serif'],
+				instrument: ['"Instrument Serif"', 'Georgia', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -153,5 +156,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animatePlugin],
 } satisfies Config;

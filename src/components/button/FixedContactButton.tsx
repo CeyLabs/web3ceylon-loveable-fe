@@ -57,7 +57,9 @@ export default function FixedContactButton({
       ref={buttonRef}
       transformTemplate={(_, generated) => `translateX(-50%) ${generated}`}
       className={`${
-        isModalOpen ? "bg-[#7B3F00]" : "bg-[#EEE4D7]"
+        isModalOpen
+          ? "bg-[#7B3F00]"
+          : "bg-[rgba(238,228,215,0.5)] backdrop-blur-md"
       } flex items-center gap-2 xl:gap-3 fixed bottom-8 left-1/2 -translate-x-1/2 pl-1 py-1 pr-4 xl:pr-6 rounded-full shadow-2xl cursor-pointer group z-50 transition-colors duration-700 delay-100 ease-in-out`}
     >
       <div className="h-12 xl:h-16 w-12 xl:w-16 relative rounded-full">

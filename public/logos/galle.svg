@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80">
+  <style>
+    .w3 { font: 700 32px serif; fill: #1f2937; }
+    .ceylon { font: 700 32px serif; fill: #f97316; }
+    .sub { font: 700 14px serif; fill: #1f2937; }
+  </style>
+  <text x="40" y="45" font-size="40">🌴</text>
+  <text x="0" y="45" class="w3">web3</text>
+  <text x="90" y="45" class="ceylon">ceylon</text>
+  <text x="90" y="70" class="sub">GALLE</text>
+</svg>

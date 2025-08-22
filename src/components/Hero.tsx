@@ -21,9 +21,12 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
       <div className="container mx-auto px-4 md:px-6 py-20 md:py-32 relative z-10 max-w-4xl">
         <div className="max-w-3xl mx-auto text-center">
           <FadeIn delay={200}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium tracking-tight text-white leading-tight mb-6">
-              Web3Ceylon 2025
-            </h1>
+            <img
+              src="/logos/main-logo.svg"
+              alt="Web3Ceylon Tour 2025"
+              className="mx-auto mb-6 w-64"
+            />
+            <h1 className="sr-only">Web3Ceylon Tour 2025</h1>
             <p className="text-xl md:text-2xl text-white/95 mb-6 font-medium">
               Sri Lanka's Largest Web3 Developer & Community Tour
             </p>

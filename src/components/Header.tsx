@@ -47,14 +47,15 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <NavLink
-          to="/"
-          className={cn(
-            "text-xl font-serif font-bold tracking-tight transition-opacity hover:opacity-80",
-            isScrolled ? "text-black" : "text-white"
-          )}
-        >
-          Web3Ceylon
+        <NavLink to="/" className="flex items-center">
+          <img
+            src="/logos/main-logo.svg"
+            alt="Web3Ceylon"
+            className={cn(
+              "h-8 w-auto transition-opacity hover:opacity-80",
+              !isScrolled && "invert"
+            )}
+          />
         </NavLink>
         
         <div className="hidden md:flex items-center space-x-8">

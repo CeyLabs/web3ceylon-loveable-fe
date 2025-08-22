@@ -1,10 +1,8 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { cn } from '@/lib/utils';
 import FadeIn from './animations/FadeIn';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 
 interface CitiesProps {
   className?: string;
@@ -16,7 +14,7 @@ const Cities: React.FC<CitiesProps> = ({ className }) => {
       name: "Colombo",
       title: "Web3 Dev Fest",
       tagline: "Sri Lanka's commercial heart turns into a Web3 innovation hub",
-      icon: "🏙️",
+      logo: "/logos/colombo.svg",
       description: "Comprehensive developer workshops, technical sessions, and blockchain fundamentals",
       highlights: ["Smart Contract Development", "DeFi Protocols", "Developer Networking", "Tech Talks"]
     },
@@ -24,7 +22,7 @@ const Cities: React.FC<CitiesProps> = ({ className }) => {
       name: "Kandy",
       title: "Blockchain Fundamentals & Crypto Essentials",
       tagline: "Web3 meets the hill capital",
-      icon: "🏛️",
+      logo: "/logos/kandy.svg",
       description: "Essential crypto knowledge, wallet setup, and blockchain basics",
       highlights: ["Wallet Security", "Bitcoin Basics", "Stablecoin Education", "Crypto Trading"]
     },
@@ -32,7 +30,7 @@ const Cities: React.FC<CitiesProps> = ({ className }) => {
       name: "Galle",
       title: "Web3 for Creators & Entrepreneurs",
       tagline: "Coastal vibes, creative minds",
-      icon: "🎨",
+      logo: "/logos/galle.svg",
       description: "NFT creation, DAO governance, and creator economy exploration",
       highlights: ["NFT Creation", "Creator Economy", "DAO Governance", "Digital Art"]
     },
@@ -40,7 +38,7 @@ const Cities: React.FC<CitiesProps> = ({ className }) => {
       name: "Ella",
       title: "Web3 Community Retreat",
       tagline: "Unwind, connect, and build in Sri Lanka's scenic highlands",
-      icon: "🏔️",
+      logo: "/logos/ella.svg",
       description: "Fireside chats, networking sessions, and community bonding",
       highlights: ["Fireside Chats", "Network Building", "Community Bonding", "Scenic Workshops"]
     }
@@ -67,7 +65,11 @@ const Cities: React.FC<CitiesProps> = ({ className }) => {
               <Card className="border-0 shadow-lg h-full hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-4">
-                    <span className="text-4xl mr-4">{city.icon}</span>
+                    <img
+                      src={city.logo}
+                      alt={`${city.name} logo`}
+                      className="w-16 h-auto mr-4"
+                    />
                     <div>
                       <h3 className="text-2xl font-serif font-medium mb-1">{city.name}</h3>
                       <h4 className="text-lg font-medium text-blue-600">{city.title}</h4>
